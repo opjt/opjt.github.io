@@ -1,0 +1,9 @@
+# main links
+# main links
+main:
+- title: "Home"
+  url: "/"
+- title: "카테고리"
+  url: "/categories/"
+- title: "Tags"
+  url: /tags/
