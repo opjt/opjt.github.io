@@ -3,7 +3,7 @@
 main:
 - title: "Home"
   url: "/"
-- title: "카테고리"
-  url: "/categories/"
+- title: "Posts"
+  url: "/year-archive/"
 - title: "Tags"
   url: /tags/

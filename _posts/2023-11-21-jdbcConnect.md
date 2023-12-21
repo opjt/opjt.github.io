@@ -4,6 +4,8 @@ description: null
 summary: null
 tags: sql java
 published: true
+categories:
+- JAVA
 ---
 
 
