@@ -1,5 +1,5 @@
 ---
-title: null 과 undefined의 차이와 변수들
+title: null 과 undefined의 차이와 변수들
 toc: false
 toc_sticky: true
 toc_label: "목차"
