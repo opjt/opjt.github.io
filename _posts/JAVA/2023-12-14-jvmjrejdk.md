@@ -1,24 +1,20 @@
 ---
-title: jre jdk jvm
+title: "[JAVA] jre jdk jvm"
 toc: true
 toc_sticky: true
 toc_label: "목차"
 tags: 상식
 published: true
 categories:
-- JAVA
+- Tech
 ---
 
 # JRE
-
 **Java Runtime Environment**  
 JRE는 자바 실행환경의 약자로 JVM과 자바 프로그램을 실행(동작)시킬 때 필요한 라이브러리 API를 함께 묶어서 배포되는 패키지 이다
-
-
 # JVM
 **Java Virtual Machine**  
 JVM은 자바 가상머신의 약자이다 
-
 # JDK  
 **Java Development Kit**  
 자바 개발키트의 약자로 개발자들이 자바로 개잘하기 위해 사용되는 키트라고 생각하면 된다

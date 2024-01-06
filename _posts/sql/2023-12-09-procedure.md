@@ -1,12 +1,12 @@
 ---
-title: 프로시저
+title: "[SQL] 프로시저"
 toc: true
 toc_sticky: true
 toc_label: "목차"
 tags: oracle sql
 published: true
 categories:
-- sql
+- Tech
 ---
 
 **저장 프로시저(Stored Procedure : 스토어드 프로시저)**  

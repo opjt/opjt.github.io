@@ -1,5 +1,5 @@
 ---
-title: 첫번째글입니다
+title: "[GITHUB-BLOG] 첫번째글입니다"
 toc: true
 toc_sticky: true
 toc_label: "Getting Started"

@@ -30,7 +30,7 @@
       {% assign tags_sorted = post.tags | sort_natural %}
 
     {% for tag_word in tags_sorted %}
-    <a href="/tags/#{{tag_word}}" class="homepost-tag" rel="tag">#{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
+    <a href="/tags/#{{tag_word}}" class="homepost-tag" rel="tag">{{ tag_word }}</a>{% unless forloop.last %}<span class="sep"> </span>{% endunless %}
     {% endfor %}
   {% endif %}
   {% if post.date %}

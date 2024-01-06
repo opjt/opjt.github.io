@@ -1,5 +1,5 @@
 ---
-title: null 과 undefined의 차이와 변수들
+title: "[JS]null 과 undefined의 차이와 변수들"
 toc: false
 toc_sticky: true
 toc_label: "목차"
@@ -7,7 +7,7 @@ tags: javascript
 published: true
 last_modified_at: 2023-12-29
 categories:
-- frontend
+- Tech
 ---
 # null, undefined
 자바스크립트를 사용하다보면 null과 undefined가 자주 나온다.  
