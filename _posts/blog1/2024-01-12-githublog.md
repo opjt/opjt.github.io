@@ -1,6 +1,6 @@
 ---
 title: "[GITHUB-BLOG] 시리즈-1"
-toc: true
+toc: false
 toc_sticky: true
 toc_label: "Getting Started"
 tags: jekyll
