@@ -4,7 +4,7 @@ toc: false
 toc_sticky: true
 toc_label: "목차"
 tags: React
-published: false
+published: true
 categories:
 - Tech
 ---
@@ -59,7 +59,7 @@ function Test() {
 export default Test;
 ```
 
-# 클래스형
+## 클래스형
 
 
 ```js
@@ -98,4 +98,4 @@ class Test extends Component {
 
 export default Test;
 ```
-
+마찬가지로 setState를 사용해서 state값을 변경해야 한다

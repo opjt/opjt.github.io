@@ -1,5 +1,5 @@
 ---
-title: "[SQL/JDBC] 오라클db JDBC 연결 1"
+title: "[Java] 오라클db JDBC 연결 1"
 description: null
 summary: null
 tags: sql java
