@@ -9,3 +9,30 @@
 a {
     text-decoration: none;
 }
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 0.5em;
+}
+.pagination--pager {
+    padding: 0.5em 1em;
+    
+    border: inherit;
+    background-color: #f7f7f7;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+//모바일 시
+@media (max-width: 767px) {
+    .pagination--pager {
+        width: 100%;
+    }
+    .pagination {
+        flex-direction: column;
+        row-gap: 0.5em;
+    }
+
+}

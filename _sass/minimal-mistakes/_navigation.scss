@@ -51,8 +51,8 @@
      ========================================================================== */
 
 .pagination {
-  @include clearfix();
-  float: left;
+//   @include clearfix();
+//   float: left;
   margin-top: 1em;
   padding-top: 1em;
   width: 100%;
@@ -137,14 +137,12 @@
     }
 
     &:first-child {
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
+        text-align: left;
     }
 
     &:last-child {
       margin-left: -1px;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0;
+      text-align: right;
     }
 
     &.disabled {
