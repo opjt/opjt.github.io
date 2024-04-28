@@ -1,5 +1,5 @@
 ---
-title: "[GITHUB-BLOG] 시리즈-1"
+title: "[GITHUB-BLOG] 테마커스텀(1)"
 toc: false
 toc_sticky: true
 toc_label: "Getting Started"
