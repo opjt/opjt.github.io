@@ -1,0 +1,36 @@
+# Hugo output directory
+/public/
+
+# Hugo cache
+/resources/_gen/
+/resources/_gen_before/
+/resources/_gen_after/
+resources/_gen/
+
+# Hugo caches
+/cache/
+/hugo_cache/
+/hugo_build/
+
+# Node / npm / yarn dependencies (if using Hugo Pipes or asset bundling)
+node_modules/
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# IDE / Editor
+
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# Optional: log files
+*.log
+
+# Optional: temp files
+*.tmp

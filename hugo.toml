@@ -1,0 +1,69 @@
+
+theme = "github.com/canstand/compost"
+defaultContentLanguage = "en"
+title = "PJTLOG"
+enableEmoji = true
+enableRobotsTXT = true
+
+# ignoreErrors = [ "error-remote-getjson", ]
+
+# required
+[build]
+  _merge = 'deep'
+# required
+[markup]
+  _merge = 'deep'
+
+# for better seo
+[minify]
+  _merge = 'deep'
+
+[module]
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+[[module.mounts]]
+  source = "hugo_stats.json"
+  target = "assets/watching/hugo_stats.json"
+
+[languages]
+[languages.en]
+  weight = 1
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[pagination]
+  pagerSize = 5
+
+[params]
+  logo = ""
+  colorScheme = "auto"
+
+
+[params.homepage]
+  showRecent = true
+
+
+
+[[menu.main]]
+  name = "~/"
+  pageRef = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Posts"
+  pageRef = "posts"
+  weight = 2
+
+[[menu.main]]
+  name = "Tags"
+  pageRef = "tags"
+  weight = 3
+
+[[menu.main]]
+  name = "GitHub"
+  url = "https://github.com/opjt/opjt.github.io"
+  weight = 4
