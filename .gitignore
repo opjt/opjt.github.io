@@ -12,11 +12,9 @@ resources/_gen/
 /hugo_cache/
 /hugo_build/
 
-# Node / npm / yarn dependencies (if using Hugo Pipes or asset bundling)
+
 node_modules/
-yarn-error.log
-package-lock.json
-yarn.lock
+
 
 # IDE / Editor
 
