@@ -12,6 +12,7 @@ resources/_gen/
 /hugo_cache/
 /hugo_build/
 
+hugo_stats.json
 
 node_modules/
 
