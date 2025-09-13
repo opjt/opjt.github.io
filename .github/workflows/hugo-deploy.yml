@@ -3,7 +3,7 @@ name: Build and Deploy Hugo site
 on:
   push:
     branches:
-      - main  # main 브랜치에 push될 때만 실행
+      - main # main 브랜치에 push될 때만 실행
 
 jobs:
   build:
@@ -12,18 +12,20 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          submodules: recursive # 서브모듈까지
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: "latest"
 
-      - name: Setup Node.js 
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Install npm dependencies 
+      - name: Install npm dependencies
         run: npm ci
 
       - name: Build Hugo site
