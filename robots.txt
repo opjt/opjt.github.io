@@ -1,1 +1,3 @@
 User-agent: *
+Disallow:
+Sitemap: https://opjt.github.io/sitemap.xml
