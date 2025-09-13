@@ -1,6 +1,17 @@
 {
-  "proseWrap": "always",
-  "printWidth": 160,
-  "tabWidth": 2,
-  "useTabs": true
+	"plugins": ["prettier-plugin-go-template", "prettier-plugin-tailwindcss"],
+	"htmlWhitespaceSensitivity": "css",
+	"semi": true,
+	"singleQuote": false,
+	"trailingComma": "all",
+	"printWidth": 120,
+	"endOfLine": "lf",
+	"overrides": [
+		{
+			"files": ["*.html"],
+			"options": {
+				"parser": "go-template"
+			}
+		}
+	]
 }

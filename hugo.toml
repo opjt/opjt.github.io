@@ -1,5 +1,5 @@
 
-theme = "github.com/canstand/compost"
+theme = "minstera"
 defaultContentLanguage = "en"
 title = "PJTLOG"
 enableEmoji = true
@@ -50,9 +50,6 @@ baseURL = "https://opjt.github.io"
 
 
 [[menu.main]]
-  name = "~/"
-  pageRef = "/"
-  weight = 1
 
 [[menu.main]]
   name = "Posts"
@@ -66,5 +63,5 @@ baseURL = "https://opjt.github.io"
 
 [[menu.main]]
   name = "GitHub"
-  url = "https://github.com/opjt/opjt.github.io"
+  url = "https://github.com/opjt"
   weight = 4
