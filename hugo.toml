@@ -4,6 +4,7 @@ defaultContentLanguage = "en"
 title = "PJTLOG"
 enableEmoji = true
 enableRobotsTXT = true
+baseURL = "https://opjt.github.io"
 
 # ignoreErrors = [ "error-remote-getjson", ]
 
