@@ -1,6 +1,6 @@
 
 theme = "minstera"
-defaultContentLanguage = "en"
+defaultContentLanguage = "ko"
 title = "PJTLOG"
 enableEmoji = true
 enableRobotsTXT = true
@@ -28,7 +28,7 @@ baseURL = "https://opjt.github.io"
   target = "assets/watching/hugo_stats.json"
 
 [languages]
-[languages.en]
+[languages.ko]
   weight = 1
 
 [taxonomies]
