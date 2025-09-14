@@ -4,6 +4,7 @@ date: 2025-09-12T08:41:49+09:00
 tags: ["hugo"]
 draft: false
 summary: "hugo로 정적 블로그를 만들어봐요"
+description: "hugo로 다시 한번 github 블로그를 시작합니다"
 ---
 
 ## 젠장 또 SSG 블로그야
