@@ -1,7 +1,7 @@
 
 theme = "minstera"
 defaultContentLanguage = "ko"
-title = "PJTLOG"
+title = "@>---"
 enableEmoji = true
 enableRobotsTXT = true
 baseURL = "https://opjt.github.io"
@@ -43,13 +43,14 @@ baseURL = "https://opjt.github.io"
   logo = ""
   colorScheme = "auto"
 
-
+[params.article]
+  showBreadcrumbs = true
+[params.list]
+  showBreadcrumbs = true
 [params.homepage]
   showRecent = true
 
 
-
-[[menu.main]]
 
 [[menu.main]]
   name = "Posts"

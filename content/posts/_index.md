@@ -1,4 +1,4 @@
 ---
-title: posts
+title: post-archive
 ---
 
