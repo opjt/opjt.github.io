@@ -7,13 +7,13 @@ title = "@>---"
 # copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
-  dateFormat = "2 January 2006"
+  dateFormat = "2006-01-02"
 
   # mainSections = ["section1", "section2"]
-  # description = "My awesome website"
+  description = "My Blog"
 
 [params.author]
-  # name = "Your name here"
+  # name = "PJT"
   # image = "img/author.jpg"
   # headline = "I'm only human"
   # bio = "A little bit about you"
