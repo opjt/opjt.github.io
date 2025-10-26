@@ -1,0 +1,21 @@
+<article class="prose dark:prose-invert max-w-full">
+  <pre class="ascii" aria-label="ASCII art">
+      __     Happy Coding Day       \_/
+     ((6}     Relax and smell     --(_)--
+      )(        some roses.         / \
+     \(\)
+      \.'-b____q            &lt;@l&gt; &lt;@l&gt;&lt;@l&gt;
+      ;;---------;;          \)/ \(/ \(/
+  """""""""""""""""""""""""""""""""""""""""""""
+</pre
+  >
+  <!-- {{ with .Title }}
+    <header>
+      <h2>{{ . | emojify }}</h2>
+    </header>
+  {{ end }} -->
+  <section>{{ .Content | emojify }}</section>
+</article>
+<section>
+  {{ partial "recent-articles.html" . }}
+</section>
