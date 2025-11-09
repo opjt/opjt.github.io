@@ -1,5 +1,3 @@
 ---
 title: 'Digital Garden'
 ---
-
-
