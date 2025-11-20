@@ -13,12 +13,12 @@ title = "@>---"
   description = "My Blog"
 
 [params.author]
-  # name = "PJT"
+  name = "Park Jungtae"
   # image = "img/author.jpg"
   # headline = "I'm only human"
   # bio = "A little bit about you"
-  # links = [
-  #   { email = "mailto:hello@your_domain.com" },
+  links = [
+    { email = "jtpark1957@gmail.com" },
   #   { link = "https://link-to-some-website.com/" },
   #   { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
   #   { apple = "https://www.apple.com" },
@@ -64,4 +64,4 @@ title = "@>---"
   #   { x-twitter = "https://twitter.com/username" },
   #   { youtube = "https://youtube.com/username" },
   #   { xing = "https://xing.com/profile/username" },
-  # ]
+  ]
