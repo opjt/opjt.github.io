@@ -1,8 +1,8 @@
 ---
-title: {{ replace .Name "-" " " | title }}
-date: {{ .Date }}
+title: { { replace .Name "-" " " | title } }
+date: { { .Date } }
 tags: [""]
 description: ""
-draft: true
-summary: ""
+# draft: true
+# summary: ""
 ---
