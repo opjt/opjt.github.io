@@ -1,1 +1,64 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@&gt;---</title><link>https://opjt.github.io/tags/go/</link><description>Recent content in Go on @&gt;---</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Sun, 09 Nov 2025 22:36:23 +0900</lastBuildDate><atom:link href="https://opjt.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>고퍼콘2025후기</title><link>https://opjt.github.io/posts/3/</link><pubDate>Sun, 09 Nov 2025 22:36:23 +0900</pubDate><guid>https://opjt.github.io/posts/3/</guid><description>개발자 컨퍼런스 처음 가본 사람</description></item><item><title>Go 에서 환경변수 다루기</title><link>https://opjt.github.io/posts/2/</link><pubDate>Sat, 25 Oct 2025 19:41:37 +0900</pubDate><guid>https://opjt.github.io/posts/2/</guid><description>어떻게 환경변수를 관리해야 잘했다고 소문이날까</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>@&gt;---</title><link>https://opjt.github.io/tags/go/</link><description>Recent content in Go on @&gt;---</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Thu, 01 Jan 2026 19:24:24 +0900</lastBuildDate><atom:link href="https://opjt.github.io/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>두근두근 첫 오픈소스 기여</title><link>https://opjt.github.io/posts/6/</link><pubDate>Thu, 01 Jan 2026 19:24:24 +0900</pubDate><guid>https://opjt.github.io/posts/6/</guid><description>&lt;p&gt;
+
+
+
+
+
+&lt;figure&gt;
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+ &lt;picture
+ class="mx-auto my-0 rounded-md"
+ 
+ &gt;
+ 
+ 
+ 
+ 
+ &lt;source
+ 
+ srcset="https://opjt.github.io/posts/6/1_hu_a0998698d9012e2d.webp 330w,https://opjt.github.io/posts/6/1_hu_1d5c0ed6ce8ab891.webp 660w
+ 
+ ,https://opjt.github.io/posts/6/1_hu_707b3d2beeeb3633.webp 1024w
+ 
+ 
+ ,https://opjt.github.io/posts/6/1_hu_cd0ae9f3b04dfe18.webp 1320w
+ "
+ 
+ sizes="100vw"
+ type="image/webp"
+ /&gt;
+ 
+ &lt;img
+ width="2544"
+ height="1252"
+ class="mx-auto my-0 rounded-md"
+ alt="first contribute!"
+ loading="lazy" decoding="async"
+ 
+ src="https://opjt.github.io/posts/6/1_hu_51b6bb0fc18134f9.png" srcset="https://opjt.github.io/posts/6/1_hu_d7d470664dd5c87e.png 330w,https://opjt.github.io/posts/6/1_hu_51b6bb0fc18134f9.png 660w
+ 
+ ,https://opjt.github.io/posts/6/1_hu_d4d5914b841eb350.png 1024w
+ 
+ 
+ ,https://opjt.github.io/posts/6/1_hu_af936469d034d3e6.png 1320w
+ "
+ sizes="100vw"
+ 
+ /&gt;
+ &lt;/picture&gt;
+ 
+
+
+&lt;/figure&gt;
+
+사실 거창한 기여를 한 건 아니다. 하지만 &amp;ldquo;첫&amp;rdquo; 기여라는 점에서, 이 경험은 꼭 한 번 기록으로 남기고 싶었다.&lt;/p&gt;</description></item><item><title>고퍼콘2025후기</title><link>https://opjt.github.io/posts/3/</link><pubDate>Sun, 09 Nov 2025 22:36:23 +0900</pubDate><guid>https://opjt.github.io/posts/3/</guid><description>개발자 컨퍼런스 처음 가본 사람</description></item><item><title>Go 에서 환경변수 다루기</title><link>https://opjt.github.io/posts/2/</link><pubDate>Sat, 25 Oct 2025 19:41:37 +0900</pubDate><guid>https://opjt.github.io/posts/2/</guid><description>어떻게 환경변수를 관리해야 잘했다고 소문이날까</description></item></channel></rss>
