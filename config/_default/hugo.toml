@@ -26,3 +26,4 @@ summaryLength = 20
 [services]
   [services.x]
     disableInlineCSS = true
+
