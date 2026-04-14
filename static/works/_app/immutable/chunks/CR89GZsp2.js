@@ -1,0 +1,1 @@
+import"./DPC2_EM8.js";import{n as e}from"./CPuE0kb72.js";export{e as createArchitectureServices};
