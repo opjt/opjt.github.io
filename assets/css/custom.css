@@ -21,3 +21,127 @@ code {
 .prose :where(blockquote p:last-of-type):not(:where([class~="not-prose"], [class~="not-prose"] *))::after {
   content: inherit;
 }
+
+/* ===== 코드 블록 컨테이너 ===== */
+.highlight {
+  border-radius: 6px;
+
+  overflow-x: auto;
+  font-family: "Consolas", "JetBrains Mono", "Fira Code", monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* ===== Chroma 토큰 — VS Code Dark+ 색상 ===== */
+
+/* 기본 텍스트 */
+.highlight .chroma {
+  color: #d4d4d4;
+  background: #1e1e1e;
+}
+
+/* 주석 */
+.highlight .c,
+.highlight .c1,
+.highlight .cm,
+.highlight .cs,
+.highlight .cp,
+.highlight .ch {
+  color: #6a9955;
+  font-style: italic;
+} /* green */
+
+/* 키워드 */
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr {
+  color: #569cd6;
+} /* blue */
+
+/* 타입/클래스명 */
+.highlight .kt {
+  color: #4ec9b0;
+} /* teal */
+.highlight .nc {
+  color: #4ec9b0;
+}
+.highlight .nb {
+  color: #4ec9b0;
+}
+
+/* 함수명 */
+.highlight .nf,
+.highlight .fm {
+  color: #dcdcaa;
+} /* yellow */
+
+/* 변수명 */
+.highlight .n,
+.highlight .nv,
+.highlight .nx {
+  color: #9cdcfe;
+} /* light blue */
+
+/* 문자열 */
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd,
+.highlight .se,
+.highlight .si,
+.highlight .sx {
+  color: #ce9178;
+} /* orange */
+
+/* 숫자 */
+.highlight .mi,
+.highlight .mf,
+.highlight .mh,
+.highlight .mo,
+.highlight .il {
+  color: #b5cea8;
+} /* light green */
+
+/* 연산자 */
+.highlight .o,
+.highlight .ow {
+  color: #d4d4d4;
+}
+
+/* 구두점/괄호 */
+.highlight .p {
+  color: #d4d4d4;
+}
+
+/* 특수 이름 (self, this 등) */
+.highlight .bp {
+  color: #569cd6;
+}
+
+/* 데코레이터/어노테이션 */
+.highlight .nd {
+  color: #dcdcaa;
+}
+
+/* import/namespace */
+.highlight .nn {
+  color: #4ec9b0;
+}
+
+/* 에러 강조 */
+.highlight .err {
+  color: #f44747;
+  background: transparent;
+}
+
+/* 라인 하이라이트 */
+.highlight .hl {
+  background: #264f78;
+  display: block;
+  width: 100%;
+}
