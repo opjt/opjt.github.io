@@ -1,21 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>아마도 아마추어</title><link>https://opjt.github.io/</link><description>Recent content in Digital Garden on 아마도 아마추어</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Sat, 27 Jun 2026 09:27:16 +0900</lastBuildDate><atom:link href="https://opjt.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Lima VM의 containerd 버전 변경하기</title><link>https://opjt.github.io/posts/15/</link><pubDate>Sat, 27 Jun 2026 09:27:16 +0900</pubDate><guid>https://opjt.github.io/posts/15/</guid><description>&lt;p&gt;Lima의 장점중 하나는 컨테이너 런타임 환경을 탬플릿으로 제공해준다는 것이다.&lt;br&gt;
-이말은 내가 생성할 vm의 탬플릿을 지정하면 &lt;code&gt;containerd&lt;/code&gt;, &lt;code&gt;runc&lt;/code&gt;, &lt;code&gt;nerdctl&lt;/code&gt;이 모두 설치가 된다는 의미다&lt;/p&gt;</description></item><item><title>컨테이너 이미지는 어디서 오는가?</title><link>https://opjt.github.io/posts/14/</link><pubDate>Tue, 24 Mar 2026 21:50:14 +0900</pubDate><guid>https://opjt.github.io/posts/14/</guid><description>&lt;p&gt;전편 
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>아마도 아마추어</title><link>https://blog.opjt.dev/</link><description>Recent content in Digital Garden on 아마도 아마추어</description><generator>Hugo</generator><language>ko</language><lastBuildDate>Sat, 27 Jun 2026 09:27:16 +0900</lastBuildDate><atom:link href="https://blog.opjt.dev/index.xml" rel="self" type="application/rss+xml"/><item><title>Lima VM의 containerd 버전 변경하기</title><link>https://blog.opjt.dev/posts/15/</link><pubDate>Sat, 27 Jun 2026 09:27:16 +0900</pubDate><guid>https://blog.opjt.dev/posts/15/</guid><description>&lt;p&gt;Lima의 장점중 하나는 컨테이너 런타임 환경을 탬플릿으로 제공해준다는 것이다.&lt;br&gt;
+이말은 내가 생성할 vm의 탬플릿을 지정하면 &lt;code&gt;containerd&lt;/code&gt;, &lt;code&gt;runc&lt;/code&gt;, &lt;code&gt;nerdctl&lt;/code&gt;이 모두 설치가 된다는 의미다&lt;/p&gt;</description></item><item><title>컨테이너 이미지는 어디서 오는가?</title><link>https://blog.opjt.dev/posts/14/</link><pubDate>Tue, 24 Mar 2026 21:50:14 +0900</pubDate><guid>https://blog.opjt.dev/posts/14/</guid><description>&lt;p&gt;전편 
  
- &lt;a href="https://opjt.github.io/posts/13/"&gt;격리만으로는 부족하다&lt;/a&gt;에서 cgroup, seccomp, capability로 컨테이너의 보안을 강화했다.
+ &lt;a href="https://blog.opjt.dev/posts/13/"&gt;격리만으로는 부족하다&lt;/a&gt;에서 cgroup, seccomp, capability로 컨테이너의 보안을 강화했다.
 이것으로 얼추 rootless 컨테이너 런타임의 핵심 구현은 끝났다.&lt;/p&gt;
 &lt;p&gt;하지만 한 가지 불편한점이 있는데. 매번 컨테이너를 실행하려면 rootfs를 직접 준비해야 한다.&lt;br&gt;
-지금까지는 &lt;code&gt;docker export&lt;/code&gt;로 기존 컨테이너의 파일시스템을 뽑아서 사용했다.&lt;/p&gt;</description></item><item><title>rootless 컨테이너 만들기 - cgroup 과 seccomp</title><link>https://opjt.github.io/posts/13/</link><pubDate>Mon, 23 Mar 2026 20:06:41 +0900</pubDate><guid>https://opjt.github.io/posts/13/</guid><description>&lt;p&gt;전편 
+지금까지는 &lt;code&gt;docker export&lt;/code&gt;로 기존 컨테이너의 파일시스템을 뽑아서 사용했다.&lt;/p&gt;</description></item><item><title>rootless 컨테이너 만들기 - cgroup 과 seccomp</title><link>https://blog.opjt.dev/posts/13/</link><pubDate>Mon, 23 Mar 2026 20:06:41 +0900</pubDate><guid>https://blog.opjt.dev/posts/13/</guid><description>&lt;p&gt;전편 
  
- &lt;a href="https://opjt.github.io/posts/12/"&gt;컨테이너는 마법이 아니다&lt;/a&gt;에서는 namespace 와 pivot_root를 통하여 격리 환경을 구성하는데 집중하였다&lt;br&gt;
-호스트와 분리된 PID, 파일시스템, hostname을 가진 환경을 만들었지만, 이것만으로 안전한 컨테이너라고 할 수는 없다&lt;/p&gt;</description></item><item><title>컨테이너는 마법이 아니다</title><link>https://opjt.github.io/posts/12/</link><pubDate>Sun, 22 Mar 2026 14:37:19 +0900</pubDate><guid>https://opjt.github.io/posts/12/</guid><description>&lt;p&gt;처음 docker를 사용하며 컨테이너를 만들고 &lt;code&gt;exec -it&lt;/code&gt;를 통해 컨테이너 내부에 처음 들어왔을 때 경험은 참 신기했다&lt;br&gt;
-&lt;code&gt;ps&lt;/code&gt; 명령어를 치면 몇 안되는 프로세스들과 낯선 파일 구조들은 마치 VM처럼 느껴졌다&lt;/p&gt;</description></item><item><title>《Container Security》 Liz Rice</title><link>https://opjt.github.io/posts/11/</link><pubDate>Sun, 15 Mar 2026 21:13:32 +0900</pubDate><guid>https://opjt.github.io/posts/11/</guid><description>&lt;p&gt;사실 나는 책으로 공부하는 걸 그다지 좋아하지 않았다.&lt;br&gt;
-빠르게 변하는 IT 세상에서 두꺼운 종이 책은 어딘가에 머무르고 있다고 느껴졌기 때문이다.&lt;/p&gt;</description></item><item><title>토치의 인프라 속 토치 활용기</title><link>https://opjt.github.io/posts/10/</link><pubDate>Sun, 15 Mar 2026 09:58:48 +0900</pubDate><guid>https://opjt.github.io/posts/10/</guid><description>&lt;h2 id="배포가-귀찮아졌다" class="relative group"&gt;배포가 귀찮아졌다 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b0%b0%ed%8f%ac%ea%b0%80-%ea%b7%80%ec%b0%ae%ec%95%84%ec%a1%8c%eb%8b%a4" aria-label="앵커"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;사실 처음부터 거창하게 쿠버네티스(k8s)를 사용하려 했던 것은 아니었어요&lt;br&gt;
-토치 규모의 서비스는 아직도 &lt;code&gt;docker compose&lt;/code&gt; 만으로도 충분하다고 생각해요&lt;/p&gt;</description></item><item><title>내가 필요해서 만든 서비스 - 토치 개발기</title><link>https://opjt.github.io/posts/9/</link><pubDate>Mon, 02 Mar 2026 13:29:13 +0900</pubDate><guid>https://opjt.github.io/posts/9/</guid><description>&lt;h2 id="또-웹서비스야" class="relative group"&gt;또 웹서비스야? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%98%90-%ec%9b%b9%ec%84%9c%eb%b9%84%ec%8a%a4%ec%95%bc" aria-label="앵커"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;또 또 또 웹서비스를 만들고 싶었던 건 아니에요&lt;br&gt;
-가장 큰 이유는 두가지가 있는데,&lt;/p&gt;</description></item><item><title>고루틴 아는 척 하기</title><link>https://opjt.github.io/posts/8/</link><pubDate>Sun, 08 Feb 2026 12:37:21 +0900</pubDate><guid>https://opjt.github.io/posts/8/</guid><description>&lt;p&gt;Go를 사용하는 이유 중 가장 큰 이유는 마스코트가 귀여운 것도 있지만,&lt;br&gt;
-고루틴을 사용하여 프로그래밍의 동시성을 쉽게 구현할 수 있기 때문이다&lt;/p&gt;</description></item><item><title>just do it</title><link>https://opjt.github.io/posts/7/</link><pubDate>Thu, 05 Feb 2026 22:40:51 +0900</pubDate><guid>https://opjt.github.io/posts/7/</guid><description>&lt;p&gt;요즘 AI 발전에 주변에서 말이 참 많은 것 같다&lt;/p&gt;
+ &lt;a href="https://blog.opjt.dev/posts/12/"&gt;컨테이너는 마법이 아니다&lt;/a&gt;에서는 namespace 와 pivot_root를 통하여 격리 환경을 구성하는데 집중하였다&lt;br&gt;
+호스트와 분리된 PID, 파일시스템, hostname을 가진 환경을 만들었지만, 이것만으로 안전한 컨테이너라고 할 수는 없다&lt;/p&gt;</description></item><item><title>컨테이너는 마법이 아니다</title><link>https://blog.opjt.dev/posts/12/</link><pubDate>Sun, 22 Mar 2026 14:37:19 +0900</pubDate><guid>https://blog.opjt.dev/posts/12/</guid><description>&lt;p&gt;처음 docker를 사용하며 컨테이너를 만들고 &lt;code&gt;exec -it&lt;/code&gt;를 통해 컨테이너 내부에 처음 들어왔을 때 경험은 참 신기했다&lt;br&gt;
+&lt;code&gt;ps&lt;/code&gt; 명령어를 치면 몇 안되는 프로세스들과 낯선 파일 구조들은 마치 VM처럼 느껴졌다&lt;/p&gt;</description></item><item><title>《Container Security》 Liz Rice</title><link>https://blog.opjt.dev/posts/11/</link><pubDate>Sun, 15 Mar 2026 21:13:32 +0900</pubDate><guid>https://blog.opjt.dev/posts/11/</guid><description>&lt;p&gt;사실 나는 책으로 공부하는 걸 그다지 좋아하지 않았다.&lt;br&gt;
+빠르게 변하는 IT 세상에서 두꺼운 종이 책은 어딘가에 머무르고 있다고 느껴졌기 때문이다.&lt;/p&gt;</description></item><item><title>토치의 인프라 속 토치 활용기</title><link>https://blog.opjt.dev/posts/10/</link><pubDate>Sun, 15 Mar 2026 09:58:48 +0900</pubDate><guid>https://blog.opjt.dev/posts/10/</guid><description>&lt;h2 id="배포가-귀찮아졌다" class="relative group"&gt;배포가 귀찮아졌다 &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%b0%b0%ed%8f%ac%ea%b0%80-%ea%b7%80%ec%b0%ae%ec%95%84%ec%a1%8c%eb%8b%a4" aria-label="앵커"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;사실 처음부터 거창하게 쿠버네티스(k8s)를 사용하려 했던 것은 아니었어요&lt;br&gt;
+토치 규모의 서비스는 아직도 &lt;code&gt;docker compose&lt;/code&gt; 만으로도 충분하다고 생각해요&lt;/p&gt;</description></item><item><title>내가 필요해서 만든 서비스 - 토치 개발기</title><link>https://blog.opjt.dev/posts/9/</link><pubDate>Mon, 02 Mar 2026 13:29:13 +0900</pubDate><guid>https://blog.opjt.dev/posts/9/</guid><description>&lt;h2 id="또-웹서비스야" class="relative group"&gt;또 웹서비스야? &lt;span class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100"&gt;&lt;a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%98%90-%ec%9b%b9%ec%84%9c%eb%b9%84%ec%8a%a4%ec%95%bc" aria-label="앵커"&gt;#&lt;/a&gt;&lt;/span&gt;&lt;/h2&gt;&lt;p&gt;또 또 또 웹서비스를 만들고 싶었던 건 아니에요&lt;br&gt;
+가장 큰 이유는 두가지가 있는데,&lt;/p&gt;</description></item><item><title>고루틴 아는 척 하기</title><link>https://blog.opjt.dev/posts/8/</link><pubDate>Sun, 08 Feb 2026 12:37:21 +0900</pubDate><guid>https://blog.opjt.dev/posts/8/</guid><description>&lt;p&gt;Go를 사용하는 이유 중 가장 큰 이유는 마스코트가 귀여운 것도 있지만,&lt;br&gt;
+고루틴을 사용하여 프로그래밍의 동시성을 쉽게 구현할 수 있기 때문이다&lt;/p&gt;</description></item><item><title>just do it</title><link>https://blog.opjt.dev/posts/7/</link><pubDate>Thu, 05 Feb 2026 22:40:51 +0900</pubDate><guid>https://blog.opjt.dev/posts/7/</guid><description>&lt;p&gt;요즘 AI 발전에 주변에서 말이 참 많은 것 같다&lt;/p&gt;
 &lt;p&gt;바이브 코딩으로 얼마를 벌었다&lt;br&gt;
 더이상 신입 개발자 자리가 없다&lt;br&gt;
-개발자는 없어진다 등등&lt;/p&gt;</description></item><item><title>두근두근 첫 오픈소스 기여</title><link>https://opjt.github.io/posts/6/</link><pubDate>Thu, 01 Jan 2026 19:24:24 +0900</pubDate><guid>https://opjt.github.io/posts/6/</guid><description>&lt;p&gt;
+개발자는 없어진다 등등&lt;/p&gt;</description></item><item><title>두근두근 첫 오픈소스 기여</title><link>https://blog.opjt.dev/posts/6/</link><pubDate>Thu, 01 Jan 2026 19:24:24 +0900</pubDate><guid>https://blog.opjt.dev/posts/6/</guid><description>&lt;p&gt;
 
 
 
@@ -43,12 +43,12 @@
  
  &lt;source
  
- srcset="https://opjt.github.io/posts/6/1_hu_a0998698d9012e2d.webp 330w,https://opjt.github.io/posts/6/1_hu_1d5c0ed6ce8ab891.webp 660w
+ srcset="https://blog.opjt.dev/posts/6/1_hu_a0998698d9012e2d.webp 330w,https://blog.opjt.dev/posts/6/1_hu_1d5c0ed6ce8ab891.webp 660w
  
- ,https://opjt.github.io/posts/6/1_hu_707b3d2beeeb3633.webp 1024w
+ ,https://blog.opjt.dev/posts/6/1_hu_707b3d2beeeb3633.webp 1024w
  
  
- ,https://opjt.github.io/posts/6/1_hu_cd0ae9f3b04dfe18.webp 1320w
+ ,https://blog.opjt.dev/posts/6/1_hu_cd0ae9f3b04dfe18.webp 1320w
  "
  
  sizes="100vw"
@@ -62,12 +62,12 @@
  alt="first contribute!"
  loading="lazy" decoding="async"
  
- src="https://opjt.github.io/posts/6/1_hu_51b6bb0fc18134f9.png" srcset="https://opjt.github.io/posts/6/1_hu_d7d470664dd5c87e.png 330w,https://opjt.github.io/posts/6/1_hu_51b6bb0fc18134f9.png 660w
+ src="https://blog.opjt.dev/posts/6/1_hu_51b6bb0fc18134f9.png" srcset="https://blog.opjt.dev/posts/6/1_hu_d7d470664dd5c87e.png 330w,https://blog.opjt.dev/posts/6/1_hu_51b6bb0fc18134f9.png 660w
  
- ,https://opjt.github.io/posts/6/1_hu_d4d5914b841eb350.png 1024w
+ ,https://blog.opjt.dev/posts/6/1_hu_d4d5914b841eb350.png 1024w
  
  
- ,https://opjt.github.io/posts/6/1_hu_af936469d034d3e6.png 1320w
+ ,https://blog.opjt.dev/posts/6/1_hu_af936469d034d3e6.png 1320w
  "
  sizes="100vw"
  
@@ -78,7 +78,7 @@
 
 &lt;/figure&gt;
 
-사실 거창한 기여를 한 건 아니다. 하지만 &amp;ldquo;첫&amp;rdquo; 기여라는 점에서, 이 경험은 꼭 한 번 기록으로 남기고 싶었다.&lt;/p&gt;</description></item><item><title>블로그 플랫폼에 대한 고민</title><link>https://opjt.github.io/posts/5/</link><pubDate>Sat, 13 Dec 2025 15:22:55 +0900</pubDate><guid>https://opjt.github.io/posts/5/</guid><description>&lt;p&gt;구글에 기술 관련 내용을 검색하면 velog, tistory, 네이버 그리고 ***.github.io 형태의 블로그들이 있다.
-사실 구글 검색엔진에 블로그 글들이 검색이 안되는 현 시점에서, 아직도 나는 블로그 플랫폼을 고민하고 있다.&lt;/p&gt;</description></item><item><title>나 혼자만 보는 블로그</title><link>https://opjt.github.io/posts/4/</link><pubDate>Thu, 20 Nov 2025 21:48:59 +0900</pubDate><guid>https://opjt.github.io/posts/4/</guid><description>&lt;p&gt;내 블로그는 죽었다.&lt;/p&gt;
+사실 거창한 기여를 한 건 아니다. 하지만 &amp;ldquo;첫&amp;rdquo; 기여라는 점에서, 이 경험은 꼭 한 번 기록으로 남기고 싶었다.&lt;/p&gt;</description></item><item><title>블로그 플랫폼에 대한 고민</title><link>https://blog.opjt.dev/posts/5/</link><pubDate>Sat, 13 Dec 2025 15:22:55 +0900</pubDate><guid>https://blog.opjt.dev/posts/5/</guid><description>&lt;p&gt;구글에 기술 관련 내용을 검색하면 velog, tistory, 네이버 그리고 ***.github.io 형태의 블로그들이 있다.
+사실 구글 검색엔진에 블로그 글들이 검색이 안되는 현 시점에서, 아직도 나는 블로그 플랫폼을 고민하고 있다.&lt;/p&gt;</description></item><item><title>나 혼자만 보는 블로그</title><link>https://blog.opjt.dev/posts/4/</link><pubDate>Thu, 20 Nov 2025 21:48:59 +0900</pubDate><guid>https://blog.opjt.dev/posts/4/</guid><description>&lt;p&gt;내 블로그는 죽었다.&lt;/p&gt;
 &lt;p&gt;구글 검색 엔진에 등록해 보고 몇 달이 지나도 색인이 되지 않는다.&lt;br&gt;
-어쩌면 이전에 발행한 글들의 퀄리티가 낮아서 그런 것일지도 모른다는 생각이 들었다.&lt;/p&gt;</description></item><item><title>고퍼콘2025후기</title><link>https://opjt.github.io/posts/3/</link><pubDate>Sun, 09 Nov 2025 22:36:23 +0900</pubDate><guid>https://opjt.github.io/posts/3/</guid><description>개발자 컨퍼런스 처음 가본 사람</description></item><item><title>Go 에서 환경변수 다루기</title><link>https://opjt.github.io/posts/2/</link><pubDate>Sat, 25 Oct 2025 19:41:37 +0900</pubDate><guid>https://opjt.github.io/posts/2/</guid><description>어떻게 환경변수를 관리해야 잘했다고 소문이날까</description></item><item><title>neovim 찍먹</title><link>https://opjt.github.io/posts/1/</link><pubDate>Mon, 22 Sep 2025 07:55:10 +0900</pubDate><guid>https://opjt.github.io/posts/1/</guid><description>with kickstart</description></item><item><title>블로그 요이땅</title><link>https://opjt.github.io/posts/init_blog/</link><pubDate>Fri, 12 Sep 2025 08:41:49 +0900</pubDate><guid>https://opjt.github.io/posts/init_blog/</guid><description>hugo로 정적 블로그를 만들어봐요</description></item></channel></rss>
+어쩌면 이전에 발행한 글들의 퀄리티가 낮아서 그런 것일지도 모른다는 생각이 들었다.&lt;/p&gt;</description></item><item><title>고퍼콘2025후기</title><link>https://blog.opjt.dev/posts/3/</link><pubDate>Sun, 09 Nov 2025 22:36:23 +0900</pubDate><guid>https://blog.opjt.dev/posts/3/</guid><description>개발자 컨퍼런스 처음 가본 사람</description></item><item><title>Go 에서 환경변수 다루기</title><link>https://blog.opjt.dev/posts/2/</link><pubDate>Sat, 25 Oct 2025 19:41:37 +0900</pubDate><guid>https://blog.opjt.dev/posts/2/</guid><description>어떻게 환경변수를 관리해야 잘했다고 소문이날까</description></item><item><title>neovim 찍먹</title><link>https://blog.opjt.dev/posts/1/</link><pubDate>Mon, 22 Sep 2025 07:55:10 +0900</pubDate><guid>https://blog.opjt.dev/posts/1/</guid><description>with kickstart</description></item><item><title>블로그 요이땅</title><link>https://blog.opjt.dev/posts/init_blog/</link><pubDate>Fri, 12 Sep 2025 08:41:49 +0900</pubDate><guid>https://blog.opjt.dev/posts/init_blog/</guid><description>hugo로 정적 블로그를 만들어봐요</description></item></channel></rss>
